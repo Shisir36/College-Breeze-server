@@ -24,7 +24,7 @@ async function run() {
         // Connect the client to the server	(optional starting in v4.7)
         const CollegeCollections = client.db("College-breeze").collection('college');
         const CollegeName = client.db("College-breeze").collection('Admission-College');
-        await client.connect();
+        // await client.connect();
         // Send a ping to confirm a successful connection
         app.get("/college", async (req, res) => {
             const cursor = CollegeCollections.find();
